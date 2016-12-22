@@ -4,12 +4,16 @@
 (when (< emacs-major-version 24)
   ;; For important compatibility libraries like cl-lib
   (add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/")))
+
 (package-initialize) ;; You might already have this line
 ;; Set your lisp system and, optionally, some contribs
- (setq inferior-lisp-program "/usr/local/bin/sbcl")
- (setq slime-contribs '(slime-fancy))
+(setq inferior-lisp-program "/usr/local/bin/sbcl")
+(setq slime-contribs '(slime-fancy))
 
 ;; Initialize color theme
 (require 'color-theme)
 (color-theme-initialize)
 (color-theme-arjen)
+
+;; Setup Python IDE
+;; (elpy-enable)

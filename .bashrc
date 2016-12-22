@@ -114,8 +114,7 @@ if ! shopt -oq posix; then
 fi
 
 # mitsuhiko's stuff
-export EDITOR=vim
-export GIT_EDITOR=vim
+# export EDITOR=vim
 
 MITSUHIKOS_DEFAULT_COLOR="[00m"
 MITSUHIKOS_GRAY_COLOR="[37m"
@@ -270,7 +269,6 @@ alias add_alias='/home/vishal/webapps/django/hackerearth-scripts/scripts/add_ali
 alias mkpkg='/home/vishal/.custom_scripts/make_py_pkg.sh'
 alias lbr='git for-each-ref --sort=-committerdate refs/heads'
 
-
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 export EC2_HOME=~/.ec2
 export PATH=$PATH:$EC2_HOME/bin
@@ -286,3 +284,6 @@ export AWS_ELB_URL=https://elasticloadbalancing.ap-southeast-1.amazonaws.com
 
 export AWS_CREDENTIAL_FILE=~/.ec2/aws-credential
 export PATH="$HOME/.embulk/bin:$PATH"
+alias em='emacs -nw'
+export EDITOR=em
+export GIT_EDITOR=em
